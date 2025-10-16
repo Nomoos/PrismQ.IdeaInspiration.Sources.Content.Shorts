@@ -47,14 +47,14 @@ This configuration allows the module to be synchronized with its remote reposito
 ### Running the Module
 
 ```bash
-cd src/PrismQ.RepositoryTemplate.ModuleExample
+cd mod/PrismQ.RepositoryTemplate.ModuleExample
 python -m src.main
 ```
 
 ### Running Tests
 
 ```bash
-cd src/PrismQ.RepositoryTemplate.ModuleExample/tests
+cd mod/PrismQ.RepositoryTemplate.ModuleExample/tests
 pytest
 ```
 
@@ -71,7 +71,7 @@ This module can be synchronized using the repository's sync scripts:
 
 **Windows:**
 ```batch
-scripts\sync-modules.bat src\PrismQ.RepositoryTemplate.ModuleExample
+scripts\sync-modules.bat mod\PrismQ.RepositoryTemplate.ModuleExample
 ```
 
 ## Development

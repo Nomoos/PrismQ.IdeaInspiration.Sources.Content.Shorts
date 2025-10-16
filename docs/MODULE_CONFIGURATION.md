@@ -11,7 +11,7 @@ Each PrismQ module can be synchronized with its own Git repository using the `sy
 ### Location
 Place the `module.json` file in the root directory of your module:
 ```
-src/YourModule/
+mod/YourModule/
 ├── module.json          ← Configuration file
 ├── src/
 ├── tests/
@@ -90,13 +90,13 @@ The sync scripts automatically derive the following values:
 
 ### 1. Create the Module Directory Structure
 ```bash
-mkdir -p src/YourModule/src
-mkdir -p src/YourModule/tests
+mkdir -p mod/YourModule/src
+mkdir -p mod/YourModule/tests
 ```
 
 ### 2. Create `module.json`
 ```bash
-cat > src/YourModule/module.json << 'EOF'
+cat > mod/YourModule/module.json << 'EOF'
 {
   "remote": {
     "url": "https://github.com/YourOrg/YourRepo.git"
@@ -118,13 +118,13 @@ You should see your module listed with its auto-generated remote name.
 ### 4. Sync the Module
 **Windows:**
 ```batch
-scripts\sync-modules.bat src\YourModule
+scripts\sync-modules.bat mod\YourModule
 ```
 
 ## How It Works
 
 ### Module Discovery
-1. Scripts scan `src/*/` directories
+1. Scripts scan `mod/*/` directories
 2. Check for directories with both:
    - A `src/` subdirectory (indicating a valid module)
    - A `module.json` file
@@ -169,7 +169,7 @@ When syncing a module:
 
 **Solution**: Ensure your module structure includes:
 ```
-src/YourModule/
+mod/YourModule/
 ├── module.json
 └── src/              ← Required
 ```
