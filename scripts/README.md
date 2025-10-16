@@ -65,7 +65,7 @@ REM Sync all modules
 scripts\sync-modules.bat --all
 
 REM Sync a specific module
-scripts\sync-modules.bat src\YourModule
+scripts\sync-modules.bat mod\YourModule
 ```
 
 ### Configuring Python Executable
