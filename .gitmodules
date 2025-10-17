@@ -1,0 +1,4 @@
+[submodule "mod/YouTubeShortsSource"]
+	path = mod/YouTubeShortsSource
+	url = https://github.com/Nomoos/PrismQ.IdeaInspiration.Sources.Content.Shorts.YouTubeShortsSource.git
+	branch = main
